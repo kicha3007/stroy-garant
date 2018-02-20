@@ -5,40 +5,120 @@
 /******************* it-header *******************/
 
 .it-header {
-  padding: 1% 0 2% 0;
+  padding: 2% 0 2% 0;
 }
 
 .it-header__wrap {
+}
+
+.it-header__info {
+  font-size: 14px;
+  color: #BEC0C1;
+}
+
+
+.it-header__top {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 -20px;
+  overflow: hidden;
+  padding-top: 10px;
+  border-top: 1px solid #BEC0C1;
 }
+
+.it-header__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.it-header__top-half {
+  max-width: 550px;
+  flex-grow: 1;
+  flex-basis: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 20px;
+
+
+
+}
+
+.it-header__top-half--left {
+
+}
+
+
+.it-header__info {
+  padding-left: 22px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.it-header__info:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+
+}
+
+.it-header__info--location {
+  margin-right: 20px;
+}
+
+.it-header__info--location:before {
+  background: url("../img/header/info/1.svg") no-repeat center;
+}
+
+
+.it-header__info--mail:before {
+  background: url("../img/header/info/2.svg") no-repeat center;
+}
+
+.it-header__top-half--right {
+  justify-content: flex-end;
+}
+
+.it-header__other-info {
+  font-size: 14px;
+  color: #BEC0C1;
+  letter-spacing: 2px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.it-header__other-info:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../img/header/1.png") no-repeat center;
+}
+
 
 .it-logo__img-box {
   max-width: 363px;
   width: 100%;
   margin-bottom: 20px;
   overflow: hidden;
-  @include phones {
-    max-width: 300px;
-    justify-content: center;
-    margin-bottom: 0;
-  }
 }
 
 .it-logo__img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.it-header__info {
-  @include phones {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 }
 
 .it-header__column {
@@ -199,17 +279,10 @@
   max-width: 200px;
   width: 100%;
   margin-left: 5px;
-  @include phones {
-    width: 132px;
-    margin-bottom: 0;
-  }
 }
 
 .it-header__buttons .it-header__btn {
   font-size: rem(18px);
-  @include phones {
-    font-size: 1rem;
-  }
 }
 
 

@@ -1,30 +1,39 @@
 header.it-header
 		.it-container
 			.it-header__wrap
-				.it-header__column
-					a.it-logo(href='#')
-						.it-logo__img-box
-							img.it-logo__img(src='static/img/header/logo.png', alt='')
-				.it-header__column.it-header__column--second
-					.it-desc
-						i
-							| Кухня на 30 лет за 14 дней
-							br
-							| без переплат за услуги
-				.it-header__column.it-header__column--third
-					.it-header__info
-						.it-city
-							|	Тюмень
-						.it-header__phone-wrap
-							a.it-phone(href='tel:+73452499-522')
-								span.it-phone__img-wrap
-									img.it-phone__img(src='static/img/header/phone/1.png', alt='')
-								| +7 (3452)
-								b 499-522
-							a.it-phone(href='tel:+73452499-522')
-								span.it-phone__img-wrap.it-phone__img-wrap--bg
-									img.it-phone__img(src='static/img/header/phone/2.png', alt='')
-								| +7 (3452) 489 95 22
-						.it-header__buttons
-							a.it-btn.it-btn--transparent.it-header__btn(href='#it-modal1', data-modal='')
-								| Заказать звонок
+				.it-header__top
+					.it-header__top-half.it-header__top-half--left
+						.it-header__info.it-header__info--location
+							|	г. Тюмень, ул. Пермякова, д. 59, офис 210
+						.it-header__info.it-header__info--mail
+							|	stroygarant_72@mail.ru
+					.it-header__top-half.it-header__top-half--right
+						.it-header__other-info
+							| Официальный подрядчик ООО «Строительный двор»
+				.it-header__bottom
+					.it-header__half.it-header__half--left
+						a.it-logo(href='#')
+							.it-logo__img-box
+								img.it-logo__img(src='static/img/header/logo.png', alt='')
+							.it-logo__text
+								|    Ремонт коттеджей
+								br
+								| под ключ в Тюмени
+					.it-header__half.it-header__half--right
+							.it-header__phone-wrap
+								a.it-phone(href='tel:+83452212554')
+									span.it-phone__img-wrap
+										img.it-phone__img(src='static/img/header/phone/1.png', alt='')
+									| 8 (3452)
+									b
+										|	212-554
+									br
+									span.it-phone--time
+										| пн-сб: 8.00 -19.00
+								a.it-phone(href='tel:+73452499-522')
+									span.it-phone__img-wrap.it-phone__img-wrap--bg
+										img.it-phone__img(src='static/img/header/phone/2.png', alt='')
+									| +7 (3452) 489 95 22
+							.it-header__buttons
+								a.it-btn.it-btn--transparent.it-header__btn(href='#it-modal1', data-modal='')
+									| Заказать звонок

@@ -1,0 +1,230 @@
+
+<!-- calc section-->
+<section class="site-section it-container--big it-all--indent" id="block2" data-section="2">
+  <div class="it-calc__decotation"></div>
+  <div class="it-calc__wrap">
+    <div class="it-calc__half it-calc__half--left">
+      <form class="calc-section__form" id="calc_form">
+        <div class="calc-section__form-sections">
+          <input name="section" type="hidden" value="calc_section"/>
+          <div class="calc-section__box calc-section__form-sections--mod1" data-it-calculation-item="1">
+            <div class="calc-section__box-content">
+              <div class="calc-section__box-header">Выберите форму кухни</div>
+              <div class="calc-section__select-wrapper">
+                <div class="calc-section__select">
+                  <input name="kitchen_type" type="hidden" value="1"/>
+                  <div class="calc-section__select-button">
+                    <div class="calc-section__select-title">П-образная кухня</div>
+                    <div class="calc-section__select-ico image-block">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewbox="0 0 13 8">
+                        <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="calc-section__select-dropdown">
+                    <div class="calc-section__select-item" data-value="1">П-образная кухня</div>
+                    <div class="calc-section__select-item" data-value="2">Г-образная кухня</div>
+                    <div class="calc-section__select-item" data-value="3">Прямая кухня</div>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-section__kitchen-images image-block"><img class="calc-section__kitchen-image" alt="П-образная кухня" data-index="1" src="static/img/calculation/1.png"/><img class="calc-section__kitchen-image" alt="Г-образная кухня" data-index="2" src="static/img/calculation/2.png" style="display:none;"/><img class="calc-section__kitchen-image" alt="Прямая кухня" data-index="3" src="static/img/calculation/3.png" style="display:none;"/></div>
+            </div>
+          </div>
+          <div class="calc-section__box calc-section__form-sections--mod2" data-it-calculation-item="2">
+            <div class="calc-section__box-header">Выберите размер кухни</div>
+            <div class="calc-section__slider-block length-slider">
+              <div class="calc-section__slider-placeholder"><span>200</span><span class="calc-section__slider-placeholder--size">Длина, см</span><span>600</span></div>
+              <div class="calc-section__slider number-slider" id="length_slider"></div>
+              <input id="calc_length_input" name="calc_length" type="hidden"/>
+            </div>
+            <div class="calc-section__slider-block width-slider">
+              <div class="calc-section__slider-placeholder"><span>200</span><span class="calc-section__slider-placeholder--size">Ширина, см</span><span>600</span></div>
+              <div class="calc-section__slider number-slider" id="width_slider"></div>
+              <input id="calc_width_input" name="calc_width" type="hidden"/>
+            </div>
+            <div class="calc-section__slider-block width-second-slider">
+              <div class="calc-section__slider-placeholder"><span>200</span><span class="calc-section__slider-placeholder--size">Ширина 2, см</span><span>600</span></div>
+              <div class="calc-section__slider number-slider" id="width_second_slider"></div>
+              <input id="calc_width_second_input" name="calc_width_second" type="hidden"/>
+            </div>
+          </div>
+          <div class="calc-section__box calc-section__form-sections--mod3" data-it-calculation-item="3">
+            <div class="calc-section__box-header">Выберите параметры кухни</div>
+            <div class="input-field calc-section__input-field">
+              <label class="input-field__label">Материал стеновой панели</label>
+              <div class="site-select">
+                <input name="wall_panel_material" type="hidden" value="1"/>
+                <div class="site-select__button">
+                  <div class="site-select__button-title">Альбико</div>
+                  <div class="site-select__button-ico image-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewbox="0 0 13 8">
+                      <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="site-select__dropdown">
+                  <div class="site-select__dropdown-item" data-value="1">Альбико</div>
+                  <div class="site-select__dropdown-item" data-value="2">Термопластик</div>
+                  <div class="site-select__dropdown-item" data-value="3">Стекло фотопечатью</div>
+                  <div class="site-select__dropdown-item" data-value="4">Нет</div>
+                </div>
+              </div>
+            </div>
+            <div class="input-field calc-section__input-field">
+              <label class="input-field__label">Материал столешницы</label>
+              <div class="site-select">
+                <input name="сountertop_materia" type="hidden" value="1"/>
+                <div class="site-select__button">
+                  <div class="site-select__button-title">Камень</div>
+                  <div class="site-select__button-ico image-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewbox="0 0 13 8">
+                      <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="site-select__dropdown">
+                  <div class="site-select__dropdown-item" data-value="1">Камень</div>
+                  <div class="site-select__dropdown-item" data-value="2">Термопластик 38мм</div>
+                </div>
+              </div>
+            </div>
+            <div class="input-field calc-section__input-field">
+              <label class="input-field__label">Фурнитура</label>
+              <div class="site-select">
+                <input name="furniture" type="hidden" value="1"/>
+                <div class="site-select__button">
+                  <div class="site-select__button-title">С доводчиками</div>
+                  <div class="site-select__button-ico image-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewbox="0 0 13 8">
+                      <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="site-select__dropdown">
+                  <div class="site-select__dropdown-item" data-value="1">С доводчиками</div>
+                  <div class="site-select__dropdown-item" data-value="2">Без доводчиков</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calc-section__box calc-section__form-sections--mod4" data-it-calculation-item="4">
+            <div class="site-large-container">
+              <div class="calc-section__box-header">Отправьте контактные данные:</div>
+              <div class="calc-section__box-subheader">Мы быстро выполним предварительный расчет, и свяжемся с вами, чтобы обсудить детали!</div>
+              <div class="calc-section__footer-inner">
+                <label class="input-field calc-section__footer-field">
+                  <div class="it-input-field__title">Ваше имя:</div>
+                  <input class="text-input" name="name" placeholder="Введите имя" type="text"/>
+                </label>
+                <label class="input-field calc-section__footer-field">
+                  <div class="it-input-field__title">Номер телефона:</div>
+                  <input class="text-input" data-mask="phone" name="phone" placeholder="Введите телефон" type="text"/>
+                </label>
+                <div class="it-checkbox-wrap checkbox-field">
+                  <label class="it-checkbox">
+                    <input class="it-checkbox__default" type="checkbox" name="AGREE" checked="checked"/><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">Подтверждаю свое согласие на обработку персональных данных</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="it-calculation__buttons">
+            <button class="it-btn it-calculation__btn it-calculation__btn--prev" type="button" data-it-btn="prev">Назад</button>
+            <button class="it-btn it-calculation__btn it-calculation__btn--next it-btn--arrow active" type="button" data-it-btn="next">Далее</button>
+            <button class="it-btn it-calculation__btn it-calculation__btn--send" type="submit" data-it-btn="send">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="it-calc__half it-calc__half--right">
+      <ul class="it-accordion2__wrap" data-it-accord-wrap="">
+        <li class="it-accordion2__item">
+          <div class="it-accordion2__toggle" data-it-accord-toggle="">
+            <div class="it-accordion2__title">Как снять замеры самому?</div>
+            <div class="it-accordion2__sign-wrap" data-it-sign="">
+              <div class="it-accordion2__sign">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewbox="0 0 13 8">
+                  <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="it-accordion2__content" data-it-accord-item="">
+            <div class="it-accordion2__desc">
+              <div class="it-accordion2__desc-title">Ответ</div>                        Описание
+            </div>
+          </div>
+        </li>
+        <li class="it-accordion2__item">
+          <div class="it-accordion2__toggle" data-it-accord-toggle="">
+            <div class="it-accordion2__title">Как подобрать кухню под планировку?</div>
+            <div class="it-accordion2__sign-wrap" data-it-sign="">
+              <div class="it-accordion2__sign">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewbox="0 0 13 8">
+                  <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="it-accordion2__content" data-it-accord-item="">
+            <div class="it-accordion2__desc">
+              <div class="it-accordion2__desc-title">Ответ</div>Описание
+            </div>
+          </div>
+        </li>
+        <li class="it-accordion2__item">
+          <div class="it-accordion2__toggle" data-it-accord-toggle="">
+            <div class="it-accordion2__title">А если на эскизе будет красиво, а в жизни получится совсем не так?</div>
+            <div class="it-accordion2__sign-wrap" data-it-sign="">
+              <div class="it-accordion2__sign">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewbox="0 0 13 8">
+                  <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="it-accordion2__content" data-it-accord-item="">
+            <div class="it-accordion2__desc">
+              <div class="it-accordion2__desc-title">Ответ</div>Описание
+            </div>
+          </div>
+        </li>
+        <li class="it-accordion2__item">
+          <div class="it-accordion2__toggle" data-it-accord-toggle="">
+            <div class="it-accordion2__title">В процессе изготовления цена не вырастет?</div>
+            <div class="it-accordion2__sign-wrap" data-it-sign="">
+              <div class="it-accordion2__sign">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewbox="0 0 13 8">
+                  <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="it-accordion2__content" data-it-accord-item="">
+            <div class="it-accordion2__desc">
+              <div class="it-accordion2__desc-title">Ответ</div>Описание
+            </div>
+          </div>
+        </li>
+        <li class="it-accordion2__item">
+          <div class="it-accordion2__toggle it-accordion2__toggle--decoration" data-it-accord-toggle="">
+            <div class="it-accordion2__title">Почему у вас так дешево? Вы на чем-то экономите?</div>
+            <div class="it-accordion2__sign-wrap" data-it-sign="">
+              <div class="it-accordion2__sign">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewbox="0 0 13 8">
+                  <path fill="none" fill-rule="evenodd" stroke="#505050" stroke-width="2" d="M1 1l5.205 5.007L11.41 1"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="it-accordion2__content" data-it-accord-item="">
+            <div class="it-accordion2__desc">
+              <div class="it-accordion2__desc-title">Ответ</div>Описание
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

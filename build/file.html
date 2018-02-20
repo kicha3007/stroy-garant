@@ -1,0 +1,40 @@
+
+<!-- --------------------- it-file --------------------------->
+<section class="it-file">
+  <div class="it-container">
+    <div class="it-file__wrap">
+      <div class="it-file__half it-file__half--left">
+        <div class="it-file__img-box"><img class="it-file__img" src="static/img/file/1.jpg" alt=""/></div>
+      </div>
+      <div class="it-file__half it-file__half--right">
+        <div class="it-file__half-inner">
+          <div class="it-callback-title it-file__title">У вас есть фото кухни, которую вы хотите?</div>
+          <div class="it-callback__subtitle it-file__subtitle">Отправьте его нам, и мы рассчитаем стоимость, предложим варианты,<br/>как сделать лучше</div>
+          <form class="it-callback-callback__form it-form--hide" action="" method="POST" name="callback-form">
+            <div class="it-callback__input-wrap it-file__input-wrap">
+              <div class="it-callback__half it-file__callback-half">
+                <input class="it-callback__input" type="text" name="name" maxlength="200" value="" placeholder="Ваше имя" required="required"/>
+              </div>
+              <div class="it-callback__half it-file__callback-half">
+                <input class="it-callback__input" type="tel" name="phone" maxlength="200" value="" placeholder="Ваш телефон" data-phone="true" required="required" data-mask="phone"/>
+              </div>
+              <div class="it-checkbox-wrap it-file__checkbox-wrap">
+                <label class="it-checkbox">
+                  <input class="it-checkbox__default" type="checkbox" name="AGREE" checked="checked"/><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">	Подтверждаю свое согласие на обработку персональных данных</span>
+                </label>
+              </div>
+              <div class="it-callback__half it-file__callback-half">
+                <label class="it-callback__file-label">
+                  <input class="it-callback__file" id="add_file" name="file" type="file"/><span class="it-callback__file-title it-btn it-btn--transparent">Прикрепить файл</span>
+                  <div class="it-callback__file-name"></div>
+                </label>
+              </div>
+              <div class="it-callback__half it-callback__buttons it-file__callback-half"><a class="it-btn it-callback__btn" href="">Отправить заявку</a></div>
+            </div>
+            <div class="it-form__success">Спасибо!<br/> Ваша заявка принята.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
