@@ -1,0 +1,31 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+.it-offer {
+  padding: 5% 0 ;
+  background: url("../img/offer/bg.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.it-offer__half {
+  max-width: 560px;
+  width: 100%;
+  padding: 6% 5%;
+  background-color: #3B4449;
+}
+
+.it-offer__desc {
+  font-weight: 700;
+  font-size: rem(36px);
+  color: #ffffff;
+  margin-bottom: 40px;
+  @include tablets() {
+    font-size: rem(28px);
+    margin-bottom: 20px;
+  }
+}
+
+.it-offer__buttons {
+  max-width: 260px;
+  width: 100%;
+}

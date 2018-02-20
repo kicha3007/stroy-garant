@@ -1,0 +1,110 @@
+-
+	var catalogList = [
+				{
+					title: "Кухня 1 ",
+					price: "Цена от 185 000 руб",
+					list: [
+						"Фасады: мдф пленка пвх ",
+						"Столешница: пластик",
+						"Фурнитура: Blum"
+						]
+
+				},
+				{
+					title: "Кухня 2 ",
+					price: "Цена от 125 000 руб",
+					list: [
+						"Фасады: мдф пленка пвх ",
+						"Столешница: пластик ",
+						"Фурнитура: Blum+ Boyard"
+						]
+
+				},
+				{
+					title: "Кухня 3 ",
+					price: "Цена от 105 000 руб",
+					list: [
+						"Фасады: мдф пленка пвх  ",
+						"Столешница: пластик ",
+						"Фурнитура: Blum"
+						]
+
+				},
+				{
+					title: "Кухня 4 ",
+					price: "Цена от 86 000 руб",
+					list: [
+						"Фасады: мдф пленка пвх",
+						"Столешница: пластик",
+						"Фурнитура: Boyard"
+						]
+
+				},
+				{
+					title: "Кухня 5 ",
+					price: "Цена от 360 000 руб",
+					list: [
+						"Фасады:  мдф крашенные + патина золото  ",
+						"Столешница: искуственный камень",
+						"Фурнитура: Blum"
+						]
+
+				},
+				{
+					title: "Кухня 6 ",
+					price: "Цена от 180 000 руб",
+					list: [
+						"Фасады: мдф пластик",
+						"Столешница: пластик",
+						"Фурнитура: Blum"
+						]
+
+				},
+				{
+					title: "Кухня 7 ",
+					price: "Цена от 76 000 руб",
+					list: [
+						"Фасады: мдф пленка ПВХ",
+						"Столешница: пластик",
+						"Фурнитура: Boyard"
+						]
+
+				},
+				{
+					title: "Кухня 8 ",
+					price: "Цена от 250 000 руб",
+					list: [
+						"Фасады: мдф пленка",
+						"Столешница: искуственный камень",
+						"Фурнитура: Blum"
+						]
+
+				}
+	]
+section.it-catalog.it-all--min-indent
+	.it-container--big
+		.it-catalog__wrap
+			ul.it-catalog__list
+				-	var i = 0;
+				-   while ( i < catalogList.length) {
+				li.it-catalog__item
+						.it-catalog__img-box
+							- var iCountPlus = (i + 1);
+							a(href="static/img/catalog/" +  iCountPlus + "_big.jpg" data-modal="" rel="catalog" + iCountPlus)
+								img.it-catalog__img(src="static/img/catalog/" + iCountPlus + ".jpg", alt='')
+
+						.it-catalog__content
+							.it-catalog__title
+								|	#{catalogList[i].title}
+							ul.it-catalog__inner-list
+								-   for (var x = 0; x < catalogList[i]['list'].length; x++) {
+										| #{catalogList[i]['list'][x]}
+								- }
+							.it-catalog__price
+								|	#{catalogList[i].price}
+							.it-catalog__buttons
+								a(href='#it-modal1', data-modal='').it-btn.it-catalog__btn Подробнее
+
+							- count++;
+							-	i++
+				- }

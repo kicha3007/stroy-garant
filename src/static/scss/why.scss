@@ -1,0 +1,111 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-why__wrap {
+  border: 10px solid #c4c4c4;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.it-why__half {
+  padding: 4% 4%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  @include phones {
+    width: 100%;
+  }
+}
+
+.it-why__half--right {
+  background-color: rgba(176, 203, 31, 1);
+}
+
+.it-why__half-inner {
+  max-width: 330px;
+  width: 100%;
+}
+
+.it-why__title {
+  font-size: rem(20px);
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.it-why__list {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.it-why__list--indent {
+  margin-bottom: 20px;
+}
+
+.it-why__item {
+  padding: 0;
+  list-style-type: none;
+  padding-left: 25px;
+  position: relative;
+  font-size: rem(16px);
+  font-weight: 400;
+  @include phones {
+    font-size: rem(16px);
+  }
+}
+
+.it-why__item--color {
+  color: #ffffff;
+}
+
+.it-why__item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 6px;
+	height: 6px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+}
+
+.it-why__item--color:before {
+  background-color: #ffffff;
+}
+
+.it-why__sum {
+  font-weight: 700;
+}
+
+.it-why__img-box {
+  min-height: 75px;
+  max-width: 179px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.it-why__amount {
+  font-weight: 700;
+  font-size: rem(36px);
+  color: #ffffff;
+  @include phones {
+    font-size: rem(32px);
+  }
+}
+
+.it-why__desc {
+  font-size: rem(14px);
+  color: #ffffff;
+}
+
+
+
+

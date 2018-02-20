@@ -1,0 +1,197 @@
+@import '__vars';
+@import 'main-offer';
+@import 'footer';
+@import 'callback';
+@import 'advantages';
+@import 'why';
+@import 'catalog';
+@import 'header';
+@import 'price';
+@import 'calc';
+@import 'reviews';
+@import 'file';
+@import 'production';
+@import 'order';
+@import 'for-kitchen';
+@import 'contacts';
+@import 'other';
+@import 'modal';
+
+/******************* it-all-style *******************/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: rem(16px);
+}
+
+body {
+  font-size: rem(16px);
+}
+
+body * {
+  font-family: "Roboto", "Ubuntu", "Open Sans", "Lato", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.42;
+  box-sizing: border-box;
+
+}
+
+.it-container {
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  @include tablets {
+    padding: 0 15px;
+  }
+}
+
+.it-container--big {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  @include tablets {
+    padding: 0 15px;
+  }
+}
+
+.it-all-title {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-size: rem(36px);
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  @include phones {
+    font-size: rem(32px);
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}
+
+.it-all-title:before,
+.it-all-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  margin-left: -64px;
+  width: 128px;
+  height: 3px;
+  background-color: $main-color;
+  @include phones {
+    top: 30%;
+  }
+}
+
+.it-all-title:after {
+  top: auto;
+  bottom: 25%;
+  @include phones {
+    bottom: 18%;
+  }
+}
+
+.it-all--indent {
+  margin-bottom: 80px;
+}
+
+.it-all--min-indent {
+  margin-bottom: 40px;
+}
+
+.it-main-page__wrapper {
+  position: relative;
+  min-height: 100%;
+  margin-bottom: -404px;
+  overflow: hidden;
+}
+
+.it-main-page__wrapper:after {
+  content: "";
+  display: block;
+  height: 404px;
+}
+
+.it-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  user-select: none;
+  border: none;
+  padding: rem(12px) rem(10px);
+  font-size: rem(20px);
+  transition: all 0.2s ease-in-out;
+  background-color: $main-color;
+  color: #ffffff;
+  text-transform: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.it-btn:hover {
+  background-color: $main-color-hover;
+}
+
+.it-btn:hover,
+.it-btn:active,
+.it-btn:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.it-btn--transparent {
+  color: rgba(0, 0, 0, 1);
+  background-color: transparent;
+  border: 2px solid $main-color;
+  font-weight: 400;
+}
+
+.it-btn--transparent:hover {
+  background-color: $main-color-hover;
+}
+
+.it-btn--transparent:hover,
+.it-btn--transparent:active,
+.it-btn--transparent:visited {
+  color: rgba(0, 0, 0, 1);
+}
+
+/******************* media *******************/
+
+@media (max-width: 1200px) { /*desctop*/
+
+
+}
+
+@media (max-width: 992px) { /*laptop*/
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 720px) { /* tablets*/
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) { /*phones*/
+  html {
+    font-size: 13px;
+  }
+
+}

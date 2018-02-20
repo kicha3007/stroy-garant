@@ -1,0 +1,227 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+/******************* it-callback-discount *******************/
+
+
+.it-callback__wrap {
+  background-color: #ffffff;
+  padding: 15px 25px 35px 25px;
+  overflow: hidden;
+  border: 10px solid rgba(196, 196, 196, 1);
+}
+
+.it-callback-title {
+  font-weight: 700;
+  font-size: rem(36px);
+  margin-bottom: 5px;
+  text-align: center;
+  @include laptop {
+    font-size: rem(30px);
+  }
+  @include tablets {
+    font-size: rem(26px);
+  }
+}
+
+.it-callback__subtitle {
+  font-size: rem(24px);
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+  @include laptop {
+    font-size: rem(22px);
+  }
+  @include tablets {
+    font-size: rem(18px);
+  }
+}
+
+.it-callback__form {
+  overflow: hidden;
+}
+
+.it-callback__input-title {
+  font-size: rem(14px);
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+  min-height: 40px;
+}
+
+.it-callback__input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 -6px -10px;
+  overflow: hidden;
+}
+
+.it-callback__half {
+  max-width: 260px;
+  flex-grow: 1000;
+  flex-basis: 200px;
+  margin: 0 6px 10px;
+}
+
+
+.it-callback__buttons {
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+.it-callback__input::-webkit-input-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+.it-callback__input::-moz-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+.it-callback__input:-ms-input-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+.it-callback__input:-moz-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-callback__input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: rem(14px);
+  padding: 14px 20px;
+  color: rgba(51, 51, 51, 0.5);
+  width: 100%;
+  line-height: 1.42;
+}
+
+.it-callback__select-wrap {
+  position: relative;
+  width: 100%;
+}
+.it-callback__select-wrap:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  margin-left: -3.5px;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top: 7px solid rgba(0, 0, 0, 1);
+  pointer-events: none;
+
+}
+
+.it-callback__select-wrap:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 35%;
+  right: 2%;
+  width: 25px;
+  height: 20px;
+  background-color: #fff;
+  pointer-events: none;
+}
+
+.it-callback__select {
+  padding: 14px 20px;
+}
+
+.it-callback__checkbox-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/******************* it-form__success *******************/
+
+.it-form__success {
+  font-size: rem(36px);
+  text-align: center;
+  display: none;
+  line-height: 1em;
+}
+
+.it-form--hide.success *:not(.it-form__success) {
+  display: none;
+}
+
+.it-form--hide.success .it-form__success {
+  display: block;
+}
+
+
+/******************* it-checkbox *******************/
+
+.it-checkbox {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  margin: 0;
+
+}
+
+.it-checkbox__default {
+  width: 1px;
+  height: 1px;
+  position: relative;
+  right: -15px;
+}
+
+.it-checkbox__pseudo {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: 1px solid rgba(80, 66, 66, 0.2);
+  margin-right: 8px;
+  left: -7px;
+}
+
+.it-checkbox__pseudo:before {
+  content: '\002714';
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: -1px;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: rem(22px);
+  color: $main-color;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -ms-transform: scale(0.4);
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+  -webkit-transition: all 0.225s ease-in-out;
+  transition: all 0.225s ease-in-out;
+  cursor: pointer;
+}
+
+.it-checkbox__default:checked + .it-checkbox__pseudo:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.it-price-checkbox__default:checked + .it-price-checkbox__pseudo + .it-price-checkbox-text {
+  font-weight: 700;
+}
+
+.it-checkbox__text {
+  color: rgba(0, 0, 0, 0.38);
+  font-size: rem(12px);
+  flex-basis: 100px;
+  flex-grow: 1;
+  font-weight: 400;
+}

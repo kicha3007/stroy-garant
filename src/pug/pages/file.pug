@@ -1,0 +1,42 @@
+// --------------------- it-file -------------------------
+
+section.it-file
+	.it-container
+		.it-file__wrap
+			.it-file__half.it-file__half--left
+				.it-file__img-box
+					img.it-file__img(src="static/img/file/1.jpg", alt='')
+			.it-file__half.it-file__half--right
+				.it-file__half-inner
+					.it-callback-title.it-file__title У вас есть фото кухни, которую вы хотите?
+					.it-callback__subtitle.it-file__subtitle
+						|Отправьте его нам, и мы рассчитаем стоимость, предложим варианты,
+						br
+						| как сделать лучше
+					form.it-callback-callback__form.it-form--hide(action='' method='POST' name='callback-form')
+						.it-callback__input-wrap.it-file__input-wrap
+							.it-callback__half.it-file__callback-half
+								input.it-callback__input(type="text" name='name', maxlength='200', value='', placeholder='Ваше имя', required)
+							.it-callback__half.it-file__callback-half
+								input.it-callback__input(type='tel', name='phone', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required, data-mask='phone')
+							.it-checkbox-wrap.it-file__checkbox-wrap
+								label.it-checkbox
+									input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+									span.it-checkbox__pseudo
+									span.it-checkbox__text
+										|	Подтверждаю свое согласие на обработку персональных данных
+							.it-callback__half.it-file__callback-half
+								label.it-callback__file-label
+									input.it-callback__file#add_file(name='file', type='file')
+									span.it-callback__file-title.it-btn.it-btn--transparent Прикрепить файл
+									.it-callback__file-name
+
+							.it-callback__half.it-callback__buttons.it-file__callback-half
+								a(href="").it-btn.it-callback__btn Отправить заявку
+						.it-form__success
+							| Спасибо!
+							br
+							|  Ваша заявка принята.
+
+
+

@@ -1,0 +1,16 @@
+section.it-order
+	.it-container--big
+		.it-order__wrap
+			ul.it-order__list
+				- var orderList = {'Экономия свободного времени' : "Дизайнер бесплатно выезжает, рисует эскиз, делает расчет", "Экономия денег" : "Экономите до 40%, не переплачивая посредникам - у нас собственное производство" , "Бесплатный сервис": "Доставка и монтаж под ключ" ,"Уникальный дизайн" : "Максимальное использование полезной площади – реализуем любой нестандартный проект"};
+				-   for (var key in orderList) {
+				li.it-order__item
+					.it-order__img-box
+						img(src="static/img/order/arrow.png", alt='').it-order__img
+					.it-order__inner-item
+			
+						.it-order__title
+							|	#{key}
+						.it-order__desc
+							|	#{orderList[key]}
+				- }

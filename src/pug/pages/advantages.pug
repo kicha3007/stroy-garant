@@ -1,0 +1,17 @@
+section.it-advantages
+	.it-container--big
+		.it-advantages__wrap
+			ul.it-advantages__list
+				- var advantagesList = {'14 дней' : "Срок изготовления и сборки мебели. Указан в договоре", "2 месяца" : "Рассрочка для наших клиентов без банков, после предоплаты в 50% " , "2 года": "Гарантия на кухни и шкафы" ,"30 лет" : "Минимальный срок службы нашей мебели"};
+				- var i = 1;
+				-   for (var key in advantagesList) {
+				li.it-advantages__item
+					.it-advantages__inner-item
+						.it-advantages__img-box
+							img.it-advantages__img(src="static/img/advantages/" + i + ".png", alt='')
+						.it-advantages__title
+							|	#{key}
+						.it-advantages__desc
+							|	#{advantagesList[key]}
+					- i++;
+				- }

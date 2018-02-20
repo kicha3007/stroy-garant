@@ -1,0 +1,91 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+
+/******************* it-footer *******************/
+
+.it-main-page__footer {
+  height: 404px;
+  background: rgba(1, 169, 224, 0.2);
+  display: block;
+  z-index: 20;
+  position: relative;
+}
+
+.it-footer {
+  height: 100%;
+  background-color: rgba(59, 68, 73, 1);
+  padding: 5% 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.it-footer * {
+  color: #ffffff;
+}
+
+
+.footer__copy {
+  margin-bottom: 30px;
+  padding-left: 90px;
+}
+
+.footer__copy-link {
+  color: #61A7D8;
+  text-decoration: none;
+  font-size: 0.75rem;
+  position: relative;
+  padding-right: 25px;
+}
+
+.footer__copy-link:hover {
+  color: #61A7D8;
+  text-decoration: none;
+}
+
+.footer__copy-link:active,
+.footer__copy-link:visited {
+  color: #61A7D8;
+  text-decoration: none;
+}
+
+.footer__copy-link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 20px;
+  height: 21px;
+  background: url("../img/footer/iq-logo.png") no-repeat center;
+}
+
+.footer__wrap {
+  margin: 0 -30px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__half {
+  max-width: 250px;
+  margin: 0 30px;
+  flex-basis: 220px;
+  flex-grow: 1;
+
+}
+
+.footer__link {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__img-box--indent {
+  margin-right: 15px;
+}
+
+.footer__social {
+  margin-bottom: 15px;
+}

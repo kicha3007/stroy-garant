@@ -1,0 +1,201 @@
+// calc section
+section#block2.site-section(data-section='2').it-container--big.it-all--indent
+	.it-calc__decotation
+	.it-calc__wrap
+		.it-calc__half.it-calc__half--left
+			form#calc_form.calc-section__form
+
+				.calc-section__form-sections
+					input(name='section', type='hidden', value='calc_section')
+					.calc-section__box.calc-section__form-sections--mod1(data-it-calculation-item='1')
+						.calc-section__box-content
+							.calc-section__box-header
+								| Выберите форму кухни
+							.calc-section__select-wrapper
+								.calc-section__select
+									input(name='kitchen_type', type='hidden', value='1')
+									.calc-section__select-button
+										.calc-section__select-title
+											| П-образная кухня
+										.calc-section__select-ico.image-block
+											svg(xmlns='http://www.w3.org/2000/svg', width='14', height='12', viewbox='0 0 13 8')
+												path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+
+									.calc-section__select-dropdown
+										.calc-section__select-item(data-value='1')
+											| П-образная кухня
+										.calc-section__select-item(data-value='2')
+											| Г-образная кухня
+										.calc-section__select-item(data-value='3')
+											| Прямая кухня
+							.calc-section__kitchen-images.image-block
+								img.calc-section__kitchen-image(alt='П-образная кухня', data-index='1', src='static/img/calculation/1.png')
+								img.calc-section__kitchen-image(alt='Г-образная кухня', data-index='2', src='static/img/calculation/2.png', style='display:none;')
+								img.calc-section__kitchen-image(alt='Прямая кухня', data-index='3', src='static/img/calculation/3.png', style='display:none;')
+					.calc-section__box.calc-section__form-sections--mod2(data-it-calculation-item='2')
+						.calc-section__box-header
+							| Выберите размер кухни
+						.calc-section__slider-block.length-slider
+							.calc-section__slider-placeholder
+								span 200
+								span.calc-section__slider-placeholder--size Длина, см
+								span 600
+							#length_slider.calc-section__slider.number-slider
+							input#calc_length_input(name='calc_length', type='hidden')
+						.calc-section__slider-block.width-slider
+							.calc-section__slider-placeholder
+								span 200
+								span.calc-section__slider-placeholder--size Ширина, см
+								span 600
+							#width_slider.calc-section__slider.number-slider
+							input#calc_width_input(name='calc_width', type='hidden')
+						.calc-section__slider-block.width-second-slider
+							.calc-section__slider-placeholder
+								span 200
+								span.calc-section__slider-placeholder--size Ширина 2, см
+								span 600
+							#width_second_slider.calc-section__slider.number-slider
+							input#calc_width_second_input(name='calc_width_second', type='hidden')
+					.calc-section__box.calc-section__form-sections--mod3(data-it-calculation-item='3')
+						.calc-section__box-header
+							| Выберите параметры кухни
+						.input-field.calc-section__input-field
+							label.input-field__label Материал стеновой панели
+							.site-select
+								input(name='wall_panel_material', type='hidden', value='1')
+								.site-select__button
+									.site-select__button-title
+										| Альбико
+									.site-select__button-ico.image-block
+										svg(xmlns='http://www.w3.org/2000/svg', width='13', height='8', viewbox='0 0 13 8')
+											path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+								.site-select__dropdown
+									.site-select__dropdown-item(data-value='1')
+										| Альбико
+									.site-select__dropdown-item(data-value='2')
+										| Термопластик
+									.site-select__dropdown-item(data-value='3')
+										| Стекло фотопечатью
+									.site-select__dropdown-item(data-value='4')
+										| Нет
+						.input-field.calc-section__input-field
+							label.input-field__label Материал столешницы
+							.site-select
+								input(name='сountertop_materia', type='hidden', value='1')
+								.site-select__button
+									.site-select__button-title
+										| Камень
+									.site-select__button-ico.image-block
+										svg(xmlns='http://www.w3.org/2000/svg', width='13', height='8', viewbox='0 0 13 8')
+											path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+								.site-select__dropdown
+									.site-select__dropdown-item(data-value='1')
+										| Камень
+									.site-select__dropdown-item(data-value='2')
+										| Термопластик 38мм
+						.input-field.calc-section__input-field
+							label.input-field__label Фурнитура
+							.site-select
+								input(name='furniture', type='hidden', value='1')
+								.site-select__button
+									.site-select__button-title
+										| С доводчиками
+									.site-select__button-ico.image-block
+										svg(xmlns='http://www.w3.org/2000/svg', width='13', height='8', viewbox='0 0 13 8')
+											path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+								.site-select__dropdown
+									.site-select__dropdown-item(data-value='1')
+										| С доводчиками
+									.site-select__dropdown-item(data-value='2')
+										| Без доводчиков
+
+					.calc-section__box.calc-section__form-sections--mod4(data-it-calculation-item='4')
+						.site-large-container
+							.calc-section__box-header
+								| Отправьте контактные данные:
+							.calc-section__box-subheader
+								| Мы быстро выполним предварительный расчет, и свяжемся с вами, чтобы обсудить детали!
+							.calc-section__footer-inner
+								label.input-field.calc-section__footer-field
+									.it-input-field__title
+										| Ваше имя:
+									input.text-input(name='name', placeholder='Введите имя', type='text')
+								label.input-field.calc-section__footer-field
+									.it-input-field__title
+										| Номер телефона:
+									input.text-input(data-mask='phone', name='phone', placeholder='Введите телефон', type='text')
+								.it-checkbox-wrap.checkbox-field
+									label.it-checkbox
+										input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+										span.it-checkbox__pseudo
+										span.it-checkbox__text Подтверждаю свое согласие на обработку персональных данных
+					.it-calculation__buttons
+						button.it-btn.it-calculation__btn.it-calculation__btn--prev(type='button', data-it-btn='prev')
+							| Назад
+						button.it-btn.it-calculation__btn.it-calculation__btn--next.it-btn--arrow.active(type='button', data-it-btn='next')
+							| Далее
+						button.it-btn.it-calculation__btn.it-calculation__btn--send(type='submit', data-it-btn='send')
+							| Отправить
+		.it-calc__half.it-calc__half--right
+			ul.it-accordion2__wrap(data-it-accord-wrap='')
+				li.it-accordion2__item
+					.it-accordion2__toggle(data-it-accord-toggle='')
+						.it-accordion2__title
+							| Как снять замеры самому?
+						.it-accordion2__sign-wrap(data-it-sign='')
+							.it-accordion2__sign
+								svg(xmlns='http://www.w3.org/2000/svg', width='26', height='18', viewbox='0 0 13 8')
+									path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+					.it-accordion2__content(data-it-accord-item='')
+						.it-accordion2__desc
+							.it-accordion2__desc-title Ответ
+							|                         Описание
+				li.it-accordion2__item
+					.it-accordion2__toggle(data-it-accord-toggle='')
+						.it-accordion2__title
+							| Как подобрать кухню под планировку?
+						.it-accordion2__sign-wrap(data-it-sign='')
+							.it-accordion2__sign
+								svg(xmlns='http://www.w3.org/2000/svg', width='26', height='18', viewbox='0 0 13 8')
+									path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+					.it-accordion2__content(data-it-accord-item='')
+						.it-accordion2__desc
+							.it-accordion2__desc-title Ответ
+							|Описание
+				li.it-accordion2__item
+					.it-accordion2__toggle(data-it-accord-toggle='')
+						.it-accordion2__title
+							| А если на эскизе будет красиво, а в жизни получится совсем не так?
+						.it-accordion2__sign-wrap(data-it-sign='')
+							.it-accordion2__sign
+								svg(xmlns='http://www.w3.org/2000/svg', width='26', height='18', viewbox='0 0 13 8')
+									path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+					.it-accordion2__content(data-it-accord-item='')
+						.it-accordion2__desc
+							.it-accordion2__desc-title Ответ
+							| Описание
+				li.it-accordion2__item
+					.it-accordion2__toggle(data-it-accord-toggle='')
+						.it-accordion2__title
+							| В процессе изготовления цена не вырастет?
+						.it-accordion2__sign-wrap(data-it-sign='')
+							.it-accordion2__sign
+								svg(xmlns='http://www.w3.org/2000/svg', width='26', height='18', viewbox='0 0 13 8')
+									path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+					.it-accordion2__content(data-it-accord-item='')
+						.it-accordion2__desc
+							.it-accordion2__desc-title Ответ
+							| Описание
+				li.it-accordion2__item
+					.it-accordion2__toggle.it-accordion2__toggle--decoration(data-it-accord-toggle='')
+						.it-accordion2__title
+							| Почему у вас так дешево? Вы на чем-то экономите?
+						.it-accordion2__sign-wrap(data-it-sign='')
+							.it-accordion2__sign
+								svg(xmlns='http://www.w3.org/2000/svg', width='26', height='18', viewbox='0 0 13 8')
+									path(fill='none', fill-rule='evenodd', stroke='#505050', stroke-width='2', d='M1 1l5.205 5.007L11.41 1')
+					.it-accordion2__content(data-it-accord-item='')
+						.it-accordion2__desc
+							.it-accordion2__desc-title Ответ
+							| Описание
+

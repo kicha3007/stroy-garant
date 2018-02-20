@@ -1,0 +1,111 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-file__wrap {
+  border: 10px solid #c4c4c4;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.it-file__half {
+  width: 50%;
+  @include phones {
+    width: 100%;
+  }
+}
+
+.it-file__half--right {
+  background-color: #FAFAFA;
+  padding: 25px 5% 10px;
+}
+
+.it-file__half-inner {
+  width: 100%;
+}
+
+.it-file__img-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.it-file__img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.it-file__callback-half {
+  max-width: 100% ;
+  margin: 0 0 20px;
+  flex-basis: 100%;
+}
+
+.it-file__checkbox-wrap {
+  text-align: left;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  margin-top: -5px;
+}
+
+.it-callback__input-wrap {
+  margin: 0 0 -10px;
+}
+
+.it-file__title {
+  text-align: left;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.it-file__subtitle {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+
+/******************* it-callback + it-input-file *******************/
+
+.it-photo__file-label--indent {
+  margin-bottom: 20px;
+}
+
+.it-callback__file-label {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.it-callback__file {
+  display: none !important;
+}
+
+
+
+
+.it-callback__file-name {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -80px;
+  width: 160px;
+  height: 13px;
+  font-size: 9px;
+  color: rgba(51, 51, 51, 0.5);
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+
+.it-file__input-wrap {
+  justify-content: flex-start;
+}

@@ -1,0 +1,26 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-for-kitchen__wrap {
+  overflow: hidden;
+}
+
+.it-for-kitchen__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+@media (max-width: 576px) { /*phones*/
+  .it-for-kitchen {
+    display: none;
+  }
+
+  .it-all-title--hide {
+    display: none;
+  }
+
+}

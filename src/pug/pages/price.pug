@@ -1,0 +1,11 @@
+section.it-price
+	.it-container--big
+		.it-price__wrap
+			ul.it-price__list
+				- var priceList = ["ДИЗАЙН","ЗАМЕР","ДОСТАВКА","СБОРКА"];
+		
+				-   for (var i = 0; i< priceList.length; i++) {
+				li(class="it-price__item it-price__item--bg" + (i+1))
+						.it-price__title
+							|	#{priceList[i]}
+				- }

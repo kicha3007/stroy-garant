@@ -1,0 +1,32 @@
+// --------------------- it-contacts -------------------------
+.it-container--big
+	section.it-contacts
+		.it-container
+			.it-all-title Как нас найти
+			.it-contacts__wrap
+				.it-contacts__half.it-contacts__half--left
+					.it-contacts__half-inner
+						.it-contacts__location-title Адрес салона:
+						ul.it-contacts__info-list
+							li.it-contacts__info-item.it-contacts__info-item--icon1
+								.it-contacts__info-text г. Тюмень, ул. Николая Чаплина, 117
+								.it-contacts__info-text г. Тюмень, ТЦ “ЛЕНТА”, ул. Народная 66
+							li.it-contacts__info-item.it-contacts__info-item--icon2.it-contacts__info-item--indent
+								.it-contacts__info-text artarinaa@mail.ru
+							li.it-contacts__info-item.it-contacts__info-item--icon3
+								.it-contacts__time-title Режим работы:
+								.it-contacts__time Ежедневно: с 10:00 до 19:00
+						a.it-phone(href='tel:+73452499-522')
+							span.it-phone__img-wrap.it-contacts__phone-wrap-img--size
+								img.it-phone__img(src='static/img/contacts/phone.png', alt='')
+							| +7 (3452)
+							b 499-522
+						a.it-phone(href='tel:+73452499-522')
+							span.it-phone__img-wrap.it-contacts__phone-wrap--bg
+							| +7 (3452) 489 95 22
+						.it-contacts__buttons
+							a.it-btn.it-btn--transparent.it-contacts__btn(href="#") Заказать звонок
+
+				.it-contacts__half.it-contacts__half--right
+					.it-contacts__map#location_map
+

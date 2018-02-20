@@ -1,0 +1,13 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-suboffer {
+  padding: 4% 0;
+}
+
+.it-suboffer__text {
+  font-size: rem(24px);
+  font-weight: 400;
+  text-align: center;
+}
