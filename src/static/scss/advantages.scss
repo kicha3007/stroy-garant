@@ -11,7 +11,6 @@
 
 .it-advantages__item {
   list-style-type: none;
-  border: 10px solid #c4c4c4;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -24,19 +23,20 @@
 }
 
 .it-advantages__inner-item {
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
   text-align: center;
 }
 
 .it-advantages__img-box {
-  min-height: 60px;
-  max-width: 52px;
+  min-height: 90px;
+  max-width: 90px;
   overflow: hidden;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .it-advantages__img {
@@ -46,13 +46,27 @@
 }
 
 .it-advantages__title {
-  font-size: rem(36px);
+  font-size: rem(18px);
   font-weight: 700;
-  margin-bottom: 5px;
-  color: $main-color;
+  margin-bottom: 80px;
+  color: #333333;
+  position: relative;
+  min-height: 50px;
+}
+
+.it-advantages__title:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+     margin-left: -12px;
+	background: url("../img/arrow.png") no-repeat center;
 }
 
 .it-advantages__desc {
   font-weight: 300;
-  font-size: rem(24px);
+  font-size: rem(16px);
 }

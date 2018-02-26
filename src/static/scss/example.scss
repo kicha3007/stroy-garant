@@ -1,0 +1,134 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-gift__wrap {
+  border: 10px solid rgba(0, 0, 0, 0.1);
+}
+
+.it-gift__inner-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.it-gift__half {
+  width: 50%;
+}
+
+.it-gift__half--left {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-left: 3%;
+}
+
+.it-gift__title {
+  font-size: rem(18px);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+
+
+
+.it-gift__img-box {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.it-gift__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.it-gift__buttons {
+  margin-bottom: 20px;
+  max-width: 200px;
+  width: 100%;
+}
+
+
+/******************* gift+owl *******************/
+
+
+.it-gift .box-carousel .owl-nav .owl-next,.it-gift .box-carousel .owl-nav .owl-prev {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 40px;
+  font-size: 0;
+  right: auto;
+  border: 1px solid rgba(208, 208, 208, 1);
+}
+
+.it-gift .box-carousel .owl-nav .owl-next:hover,.it-gift .box-carousel .owl-nav .owl-prev:hover {
+  opacity: .5
+}
+
+.it-gift .box-carousel .owl-nav .owl-prev {
+  left: 40px;
+}
+
+.it-gift .box-carousel .owl-nav .owl-next {
+  left: 80px;
+  border-left: none;
+}
+
+.it-gift .box-carousel .owl-nav .owl-next:after,.it-gift .box-carousel .owl-nav .owl-prev:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  width: 40px;
+  height: 40px;
+  margin-top: -3px;
+  background: url("../img/gift/arrow.png") center no-repeat;
+}
+
+.it-gift .box-carousel .owl-nav .owl-prev:after {
+  transform: scale(-1);
+  left: -2px;
+  right: auto;
+}
+
+.it-gift .box-carousel .owl-nav .owl-next:after {
+  transform: scale(1);
+  right: -2px;
+  left: auto;
+}
+
+//.it-gift .box-carousel .owl-dots {
+//  position: absolute;
+//  top: -43px;
+//  left: 50%;
+//  display: block;
+//  z-index: 10000;
+//  max-width: 200px;
+//  width: 100%;
+//  margin-left: -100px;
+//  display: -webkit-flex;
+//  display: -moz-flex;
+//  display: -ms-flex;
+//  display: -o-flex;
+//  display: flex;
+//  flex-wrap: wrap;
+//  justify-content: center;
+//}
+//
+//.it-gift .box-carousel .owl-dots .owl-dot {
+//  width: 6px;
+//  height: 6px;
+//  border: 3px solid transparent;
+//  background: #c4c4c4;
+//  border-radius: 50%;
+//  transition: .2s;
+//  margin: 0 5px;
+//}
+//
+//.it-gift .box-carousel .owl-dots .owl-dot.active,.it-gift .box-carousel .owl-dots .owl-dot:hover {
+//  background-color: $main-color
+//}
