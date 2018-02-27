@@ -1,0 +1,73 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-foreman__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+}
+
+.it-foreman__half {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  @include tablets {
+    width: 100%;
+  }
+
+}
+
+.it-foreman__half--right {
+  padding: 4% 8%;
+}
+
+.it-foreman__title {
+  font-weight: 700;
+  font-size: rem(24px);
+  margin-bottom: 40px;
+}
+
+.it-foreman__desc {
+  font-size: rem(18px);
+  font-weight: 300;
+}
+
+.it-foreman__person {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 15px 30px;
+}
+
+.it-foreman__name {
+  color: #FFC331;
+  font-size: rem(24px);
+  font-weight: 700;
+}
+
+.it-foreman__post {
+  font-weight: 300;
+  font-size: rem(24px);
+  color: #ffffff;
+}
+
+.it-foreman__img-box {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.it-foreman__img {
+  display: block;
+  width: auto;
+  height: 100%;
+}

@@ -1,0 +1,69 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-partners__wrap {
+  padding: 0 50px;
+};
+
+.it-partners__half {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.it-partners__img {
+  max-width: 100%;
+  width: auto !important;
+  height: auto;
+}
+
+/******************* partners+owl *******************/
+
+
+.it-partners .box-carousel .owl-nav .owl-next,.it-partners .box-carousel .owl-nav .owl-prev {
+  position: absolute;
+  width: 16px;
+  height: 34px;
+  top: 50%;
+  margin-top: -17px;
+  font-size: 0;
+  right: auto;
+
+}
+
+.it-partners .box-carousel .owl-nav .owl-next:hover,.it-partners .box-carousel .owl-nav .owl-prev:hover {
+  opacity: .5
+}
+
+.it-partners .box-carousel .owl-nav .owl-prev {
+  left: 0;
+}
+
+.it-partners .box-carousel .owl-nav .owl-next {
+  right: 0;
+  border-left: none;
+}
+
+.it-partners .box-carousel .owl-nav .owl-next:after,.it-partners .box-carousel .owl-nav .owl-prev:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 16px;
+  height: 34px;
+  background: url("../img/partners/arrow.png") center no-repeat;
+}
+
+.it-partners .box-carousel .owl-nav .owl-prev:after {
+  transform: scale(-1);
+  left: -2px;
+  right: auto;
+}
+
+.it-partners .box-carousel .owl-nav .owl-next:after {
+  transform: scale(1);
+  right: -2px;
+  left: auto;
+}

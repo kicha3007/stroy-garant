@@ -1,0 +1,169 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-scheme__list {
+  padding: 0;
+  margin: 0 0 -30px 0;
+  justify-content: center;
+  @include row-flex();
+}
+
+.it-scheme__item--first {
+  @include col();
+  @include size(2);
+  @include size-sm(12);
+  position: relative;
+  max-width: 129px;
+  @include tablets {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+}
+
+.it-scheme__item-decoration--first {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 129px;
+  height: 39px;
+  background-image: url("../img/scheme/brackets.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:  center top;
+  padding-top: 45px;
+  text-align: center;
+  color: rgba(71, 70, 70, 1);
+  font-size: rem(18px);
+  font-weight: 700;
+  max-width: 100% ;
+  @include tablets {
+    width: 100%;
+    max-width: 100%;
+    background-image: url("../img/scheme/brackets_big.png") ;
+  }
+
+}
+
+
+.it-scheme__item__decoration--second {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 958px;
+  height: 39px;
+  background-image: url("../img/scheme/brackets_big.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:  center 3px;
+  padding-top: 45px;
+  font-weight: 700;
+  max-width: 100% ;
+  text-align: center;
+  @include tablets {
+    bottom: -20px;
+  }
+}
+
+
+
+.it-scheme__item--second {
+  @include col();
+  @include size(10);
+  @include size-sm(12);
+  position: relative;
+  @include tablets {
+    margin-bottom: 60px;
+  }
+}
+
+.it-scheme__item-all-wrap {
+  @include row-flex();
+}
+
+.it-scheme__item-all-wrap .it-scheme__inner-item--second:last-child:after {
+  display: none;
+}
+
+.it-scheme__inner-item {
+  position: relative;
+}
+
+
+
+.it-scheme__inner-item--second {
+  @include col();
+  @include size(2);
+  @include size-sm(4);
+}
+
+
+.it-scheme__inner-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 24px;
+  height: 15px;
+  background: url("../img/arrow.png") no-repeat center;
+  transform: rotate(270deg);
+  @include laptop {
+    right: -20px;
+  }
+  @include tablets {
+    right: 0;
+  }
+  @include phones {
+    right: -15px;
+  }
+}
+
+.it-scheme__inner-item--first:after {
+
+  @include tablets {
+    transform: rotate(0deg);
+    right: 50%;
+    margin-right: -12px;
+    top: 190px;
+  }
+}
+
+.it-scheme__item {
+  list-style-type: none;
+}
+
+
+.it-scheme__img-box {
+  min-height: 70px;
+  max-width: 90px;
+  overflow: hidden;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.it-scheme__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.it-scheme__title {
+  font-size: rem(14px);
+  font-weight: 400;
+  margin-bottom: 120px;
+  color: #333333;
+  position: relative;
+  min-height: 50px;
+  @include tablets {
+    margin-bottom: 30px;
+  }
+
+}
+
+

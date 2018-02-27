@@ -18,6 +18,11 @@
 @import 'modal';
 @import 'gift';
 @import 'example';
+@import 'report';
+@import 'repairs';
+@import 'foreman';
+@import 'partners';
+@import 'scheme';
 
 /******************* it-all-style *******************/
 
@@ -78,6 +83,17 @@ body * {
     padding-top: 80px;
     padding-bottom: 60px;
   }
+}
+
+.it-all-subtitle {
+  font-size: rem(24px);
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.it-all-title + .it-all-subtitle {
+  margin-top: -30px;
 }
 
 //.it-all-title:before,

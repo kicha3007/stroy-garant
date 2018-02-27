@@ -1,0 +1,67 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+
+.it-report__half {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.it-report__img {
+  max-width: 100%;
+  width: auto !important;
+  height: auto;
+}
+
+/******************* report+owl *******************/
+
+
+.it-report .box-carousel .owl-nav .owl-next,.it-report .box-carousel .owl-nav .owl-prev {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 50%;
+  margin-top: -28px;
+  font-size: 0;
+  right: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.it-report .box-carousel .owl-nav .owl-next:hover,.it-report .box-carousel .owl-nav .owl-prev:hover {
+  opacity: .5
+}
+
+.it-report .box-carousel .owl-nav .owl-prev {
+  left: 0;
+}
+
+.it-report .box-carousel .owl-nav .owl-next {
+  right: 0;
+  border-left: none;
+}
+
+.it-report .box-carousel .owl-nav .owl-next:after,.it-report .box-carousel .owl-nav .owl-prev:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  background: url("../img/report/arrow.png") center no-repeat;
+}
+
+.it-report .box-carousel .owl-nav .owl-prev:after {
+  transform: scale(-1);
+  left: -2px;
+  right: auto;
+}
+
+.it-report .box-carousel .owl-nav .owl-next:after {
+  transform: scale(1);
+  right: -2px;
+  left: auto;
+}
