@@ -154,17 +154,17 @@
 }
 
 .fancybox-close {
+  position: absolute;
   background-image: url("../img/modal/close.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50%;
   width: 15px;
   height: 15px;
   top: 20px;
   right: 20px;
   padding: 15px;
-  border-radius: 50%;
-  background-color: $main-color;
+  z-index: 2000;
+  background-size: 90%;
 }
 
 .it-modal__input-title {
@@ -176,5 +176,4 @@
 
 .it-modal-policy {
   padding: 30px;
-  padding-bottom: 30px;
 }

@@ -22,7 +22,7 @@
 }
 
 .it-foreman__half--right {
-  padding: 4% 8%;
+  padding: 4% 8% 2%;
 }
 
 .it-foreman__title {
@@ -70,4 +70,36 @@
   display: block;
   width: auto;
   height: 100%;
+}
+
+.it-foreman__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.it-foreman__item {
+  list-style-type: none;
+  padding-left: 38px;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: rem(18px);
+  font-weight: 300;
+}
+
+.it-foreman__item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 24px;
+    height: 15px;
+    background: url(../img/arrow.png) no-repeat center;
+    transform: rotate(270deg);
+}
+
+
+.it-foreman__buttons  {
+  max-width: 260px;
 }

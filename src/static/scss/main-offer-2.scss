@@ -2,13 +2,13 @@
 @import "__mixins";
 @import "smart-grid";
 
-.it-offer {;
-  background: url("../img/main-offer/bg.jpg") no-repeat top;
+.it-offer2 {;
+  background: url("../img/main-offer-2/bg.jpg") no-repeat center;
   background-size: cover;
   position: relative;
 }
 
-.it-offer:before {
+.it-offer2:before {
   content: '';
   display: block;
   position: absolute;
@@ -21,34 +21,39 @@
   background-color: rgba(0,0,0,0.5);
 }
 
-.it-offer__wrap {
+.it-offer2__wrap {
   text-align: center;
-  padding: 9% 0;
+  padding: 5% 0;
   position: relative;
 
 }
 
-.it-offer__title {
-  font-size: rem(46px);
-  font-weight: 700;
-  margin-bottom: 20px;
+.it-offer2__title {
+  font-size: rem(24px);
+  font-weight: 300;
+  margin-bottom: 50px;
   color: #ffffff;
 }
 
-.it-offer__subtitle {
-  font-size: rem(28px);
-  font-weight: 300;
+.it-offer2__title span {
+  color: $main-color;
+  font-weight: 700;
+}
+
+.it-offer2__subtitle {
+  font-size: rem(36px);
+  font-weight: 700;
   margin-bottom: 40px;
   color: #ffffff;
 }
 
-.it-offer__buttons {
+.it-offer2__buttons {
   max-width: 260px;
   width: 100%;
   display: inline-block;
 
 }
 
-.it-offer__buttons .it-offer__btn {
+.it-offer2__buttons .it-offer2__btn {
   padding: 15px 10px;
 }

@@ -2,6 +2,10 @@
 @import "__mixins";
 @import "smart-grid";
 
+.it-scheme {
+  margin-bottom: 120px;
+}
+
 .it-scheme__list {
   padding: 0;
   margin: 0 0 -30px 0;
