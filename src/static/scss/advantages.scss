@@ -14,7 +14,7 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 2%;
+  padding: 0 2% 0;
   margin-bottom: 30px;
   @include col();
   @include size(3);
@@ -48,7 +48,7 @@
 .it-advantages__title {
   font-size: rem(18px);
   font-weight: 700;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   color: #333333;
   position: relative;
   min-height: 50px;
@@ -58,7 +58,7 @@
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: -50px;
+	bottom: -35px;
 	left: 50%;
 	width: 24px;
 	height: 24px;

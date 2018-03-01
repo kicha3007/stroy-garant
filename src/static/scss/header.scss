@@ -27,6 +27,9 @@
   overflow: hidden;
   padding-top: 10px;
   border-bottom: 1px solid #BEC0C1;
+  @include tablets {
+    padding-bottom: 15px;
+  }
 }
 
 .it-header__bottom {
@@ -70,6 +73,11 @@
   padding-left: 22px;
   position: relative;
   padding-bottom: 20px;
+  flex-basis: 100px;
+  flex-grow: 1;
+  @include phones {
+    font-size: 13px;
+  }
 }
 
 .it-header__info:before {
@@ -145,6 +153,11 @@
   width: 100%;
   font-size: rem(24px);
   font-weight: 300;
+  flex-basis: 100px;
+  flex-grow: 1;
+  @include laptop {
+    font-size: rem(20px);
+  }
 }
 
 .it-logo__img {
@@ -166,7 +179,7 @@
   display: block;
   margin-bottom: 10px;
   @include laptop {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   @include phones {
     font-size: 1rem;
@@ -193,6 +206,8 @@
   max-width: 200px;
   width: 100%;
   margin-left: 5px;
+  flex-basis: 100px;
+  flex-grow: 1;
 }
 
 .it-header__buttons .it-header__btn {

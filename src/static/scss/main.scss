@@ -79,10 +79,14 @@ body * {
   text-align: center;
   font-weight: 700;
   position: relative;
+  @include tablets {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
   @include phones {
     font-size: rem(32px);
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 }
 
@@ -94,7 +98,7 @@ body * {
 }
 
 .it-all-title + .it-all-subtitle {
-  margin-top: -30px;
+  margin-top: -10px;
 }
 
 //.it-all-title:before,
