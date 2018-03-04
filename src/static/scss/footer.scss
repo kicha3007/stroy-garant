@@ -35,6 +35,16 @@
   color: #000000;
   font-weight: 300;
   max-width: 230px;
+  text-decoration: none;
+}
+
+.footer__text:hover {
+	text-decoration: none;
+}
+
+.footer__text:active,
+.footer__text:visited {
+	text-decoration: none;
 }
 
 .footer__img-box {

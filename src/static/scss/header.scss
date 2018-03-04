@@ -5,7 +5,7 @@
 /******************* it-header *******************/
 
 .it-header {
-  padding: 2% 0 2% 0;
+  padding: 2% 0 1% 0;
 }
 
 .it-header__wrap {
@@ -26,7 +26,6 @@
   margin: 0 -20px;
   overflow: hidden;
   padding-top: 10px;
-  border-bottom: 1px solid #BEC0C1;
   @include tablets {
     padding-bottom: 15px;
   }
@@ -40,6 +39,9 @@
   overflow: hidden;
   margin: 0 -20px;
   padding-top: 20px;
+  @include tablets {
+      justify-content: center;
+  }
 
 }
 
@@ -51,6 +53,9 @@
   flex-wrap: wrap;
   align-items: flex-start;
   margin: 0 20px;
+  @include tablets {
+    max-width: 350px;
+  }
 }
 
 .it-header__top-half {
@@ -106,6 +111,9 @@
 
 .it-header__top-half--right {
   justify-content: flex-end;
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .it-header__half--right {
@@ -116,9 +124,20 @@
 .it-header__other-info {
   font-size: 14px;
   color: #BEC0C1;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   position: relative;
   padding-left: 60px;
+  text-decoration: none;
+}
+
+.it-header__other-info:hover {
+	text-decoration: none;
+}
+
+.it-header__other-info:active,
+.it-header__other-info:visited {
+
+	text-decoration: none;
 }
 
 .it-header__other-info:before {
@@ -158,6 +177,11 @@
   @include laptop {
     font-size: rem(20px);
   }
+  @include phones {
+      display: flex;
+      flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .it-logo__img {
@@ -167,7 +191,10 @@
 }
 
 .it-header__phone-wrap {
-  margin-right: auto;
+  padding-right: 14%;
+  @include tablets {
+    padding-right: 1%;
+  }
 }
 
 
@@ -203,15 +230,21 @@
 
 
 .it-header__buttons {
-  max-width: 200px;
+  max-width: 165px;
   width: 100%;
   margin-left: 5px;
   flex-basis: 100px;
   flex-grow: 1;
 }
 
-.it-header__buttons .it-header__btn {
-  font-size: rem(18px);
+
+.it-header__separator {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-
+.it-header .it-header__btn {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}

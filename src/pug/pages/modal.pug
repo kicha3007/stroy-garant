@@ -38,7 +38,7 @@ section#it-modal1.it-modal
 					|  Ваша заявка принята.
 
 
-// --------------------- it-modal -------------------------
+// --------------------- it-modal2 -------------------------
 section#it-modal2.it-modal
 	.it-modal__wrap
 		.it-modal__header
@@ -46,7 +46,7 @@ section#it-modal2.it-modal
 				img.it-modal__img(src='static/img/modal/1.png', alt='')
 			.it-modal__header-content
 				.it-modal__title
-					| Вызвать замерщика
+					| Узнать стоимость ремонта
 				.it-modal__subtitle
 					| Оставьте контактные данные,
 					br
@@ -76,6 +76,89 @@ section#it-modal2.it-modal
 					| Спасибо!
 					br
 					|  Ваша заявка принята.
+
+
+// --------------------- it-modal3 -------------------------
+section#it-modal3.it-modal
+	.it-modal__wrap
+		.it-modal__header
+			.it-modal__img-box
+				img.it-modal__img(src='static/img/modal/1.png', alt='')
+			.it-modal__header-content
+				.it-modal__title
+					| Рассчитать проект
+				.it-modal__subtitle
+					| Оставьте контактные данные,
+					br
+					| и мы вам перезвоним!
+		.it-modal__content
+			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST', name='modal-form', data-it-form='', enctype='multipart/form-data')
+				input(type='hidden', name='FORM_HEADER', value='Узнать стоимость квартиры')
+				.it-modal__input-wrap
+					label.it-modal__input-inner-wrap
+						.it-modal__input-title Ваше имя:
+						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Иван', required='')
+					label.it-modal__input-inner-wrap
+						.it-modal__input-title Телефон:
+						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
+					.it-modal__checkbox-wrap
+						label.it-checkbox
+							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
+							span.it-checkbox__pseudo.it-modal__checkbox__pseudo
+							span.it-checkbox__text.it-modal__checkbox__text Я согласен с Политикой конфеденциальности
+					.it-modal__buttons
+						button.it-btn.it-modal__btn(type='submit')
+							| Отправить
+					input(type='hidden', value='modal-form', name='FORM_NAME')
+					input(type='hidden', name='name')
+					input(type='hidden', name='phone')
+				.it-form__success
+					| Спасибо!
+					br
+					|  Ваша заявка принята.
+
+
+// --------------------- it-modal4 -------------------------
+section#it-modal4.it-modal
+	.it-modal__wrap
+		.it-modal__header
+			.it-modal__img-box
+				img.it-modal__img(src='static/img/modal/1.png', alt='')
+			.it-modal__header-content
+				.it-modal__title
+					| Узнать подробнее
+				.it-modal__subtitle
+					| Оставьте контактные данные,
+					br
+					| и мы вам перезвоним!
+		.it-modal__content
+			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST', name='modal-form', data-it-form='', enctype='multipart/form-data')
+				input(type='hidden', name='FORM_HEADER', value='Узнать стоимость квартиры')
+				.it-modal__input-wrap
+					label.it-modal__input-inner-wrap
+						.it-modal__input-title Ваше имя:
+						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Иван', required='')
+					label.it-modal__input-inner-wrap
+						.it-modal__input-title Телефон:
+						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
+					.it-modal__checkbox-wrap
+						label.it-checkbox
+							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
+							span.it-checkbox__pseudo.it-modal__checkbox__pseudo
+							span.it-checkbox__text.it-modal__checkbox__text Я согласен с Политикой конфеденциальности
+					.it-modal__buttons
+						button.it-btn.it-modal__btn(type='submit')
+							| Отправить
+					input(type='hidden', value='modal-form', name='FORM_NAME')
+					input(type='hidden', name='name')
+					input(type='hidden', name='phone')
+				.it-form__success
+					| Спасибо!
+					br
+					|  Ваша заявка принята.
+
+
+
 .it-modal-policy.it-modal#it-modal-policy
 	.it-container
 		.it-modal-policy__wrap

@@ -12,15 +12,19 @@
 }
 
 .it-gift__half {
-  width: 50%;
+
 }
 
 .it-gift__half--left {
-  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  padding-left: 3%;
+  padding: 8% 3% 0 3%;
+  width: 60%;
+}
+
+.it-gift__half--right {
+  width: 40%;
 }
 
 .it-gift__title {
@@ -42,10 +46,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-height: 285px;
 }
 
 .it-gift__img {
   max-width: 100%;
+  width: auto !important;
   height: auto;
   display: block;
 }

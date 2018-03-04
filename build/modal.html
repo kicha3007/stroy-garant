@@ -38,13 +38,91 @@
     </div>
   </div>
 </section>
-<!-- --------------------- it-modal --------------------------->
+<!-- --------------------- it-modal2 --------------------------->
 <section class="it-modal" id="it-modal2">
   <div class="it-modal__wrap">
     <div class="it-modal__header">
       <div class="it-modal__img-box"><img class="it-modal__img" src="static/img/modal/1.png" alt=""/></div>
       <div class="it-modal__header-content">
-        <div class="it-modal__title">Вызвать замерщика</div>
+        <div class="it-modal__title">Узнать стоимость ремонта</div>
+        <div class="it-modal__subtitle">Оставьте контактные данные,<br/>и мы вам перезвоним!</div>
+      </div>
+    </div>
+    <div class="it-modal__content">
+      <form class="it-modal__form it-form--hide" action="/sendCallBack.php" method="POST" name="modal-form" data-it-form="" enctype="multipart/form-data">
+        <input type="hidden" name="FORM_HEADER" value="Узнать стоимость квартиры"/>
+        <div class="it-modal__input-wrap">
+          <label class="it-modal__input-inner-wrap">
+            <div class="it-modal__input-title">Ваше имя:</div>
+            <input class="it-modal__input" name="name" maxlength="200" value="" placeholder="Иван" required=""/>
+          </label>
+          <label class="it-modal__input-inner-wrap">
+            <div class="it-modal__input-title">Телефон:</div>
+            <input class="it-modal__input" type="tel" name="phone" maxlength="200" value="" placeholder="+7 (999) 999-99-99" data-phone="true" required="" data-mask="phone"/>
+          </label>
+          <div class="it-modal__checkbox-wrap">
+            <label class="it-checkbox">
+              <input class="it-checkbox__default" type="checkbox" name="AGREE" checked="" required=""/><span class="it-checkbox__pseudo it-modal__checkbox__pseudo"></span><span class="it-checkbox__text it-modal__checkbox__text">Я согласен с Политикой конфеденциальности</span>
+            </label>
+          </div>
+          <div class="it-modal__buttons">
+            <button class="it-btn it-modal__btn" type="submit">Отправить</button>
+          </div>
+          <input type="hidden" value="modal-form" name="FORM_NAME"/>
+          <input type="hidden" name="name"/>
+          <input type="hidden" name="phone"/>
+        </div>
+        <div class="it-form__success">Спасибо!<br/> Ваша заявка принята.</div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- --------------------- it-modal3 --------------------------->
+<section class="it-modal" id="it-modal3">
+  <div class="it-modal__wrap">
+    <div class="it-modal__header">
+      <div class="it-modal__img-box"><img class="it-modal__img" src="static/img/modal/1.png" alt=""/></div>
+      <div class="it-modal__header-content">
+        <div class="it-modal__title">Рассчитать проект</div>
+        <div class="it-modal__subtitle">Оставьте контактные данные,<br/>и мы вам перезвоним!</div>
+      </div>
+    </div>
+    <div class="it-modal__content">
+      <form class="it-modal__form it-form--hide" action="/sendCallBack.php" method="POST" name="modal-form" data-it-form="" enctype="multipart/form-data">
+        <input type="hidden" name="FORM_HEADER" value="Узнать стоимость квартиры"/>
+        <div class="it-modal__input-wrap">
+          <label class="it-modal__input-inner-wrap">
+            <div class="it-modal__input-title">Ваше имя:</div>
+            <input class="it-modal__input" name="name" maxlength="200" value="" placeholder="Иван" required=""/>
+          </label>
+          <label class="it-modal__input-inner-wrap">
+            <div class="it-modal__input-title">Телефон:</div>
+            <input class="it-modal__input" type="tel" name="phone" maxlength="200" value="" placeholder="+7 (999) 999-99-99" data-phone="true" required="" data-mask="phone"/>
+          </label>
+          <div class="it-modal__checkbox-wrap">
+            <label class="it-checkbox">
+              <input class="it-checkbox__default" type="checkbox" name="AGREE" checked="" required=""/><span class="it-checkbox__pseudo it-modal__checkbox__pseudo"></span><span class="it-checkbox__text it-modal__checkbox__text">Я согласен с Политикой конфеденциальности</span>
+            </label>
+          </div>
+          <div class="it-modal__buttons">
+            <button class="it-btn it-modal__btn" type="submit">Отправить</button>
+          </div>
+          <input type="hidden" value="modal-form" name="FORM_NAME"/>
+          <input type="hidden" name="name"/>
+          <input type="hidden" name="phone"/>
+        </div>
+        <div class="it-form__success">Спасибо!<br/> Ваша заявка принята.</div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- --------------------- it-modal4 --------------------------->
+<section class="it-modal" id="it-modal4">
+  <div class="it-modal__wrap">
+    <div class="it-modal__header">
+      <div class="it-modal__img-box"><img class="it-modal__img" src="static/img/modal/1.png" alt=""/></div>
+      <div class="it-modal__header-content">
+        <div class="it-modal__title">Узнать подробнее</div>
         <div class="it-modal__subtitle">Оставьте контактные данные,<br/>и мы вам перезвоним!</div>
       </div>
     </div>

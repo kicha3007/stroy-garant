@@ -50,7 +50,7 @@
   font-size: rem(24px);
   font-weight: 700;
   color: #ffffff;
-  padding-bottom: 5%;
+  padding-bottom: 30px;
   position: relative;
   z-index: 1;
 
@@ -69,7 +69,7 @@
 }
 
 .it-repairs__top-price {
-  padding-top: 5%;
+  padding-top: 20px;
   font-size: rem(42px);
   font-weight: 700;
   color: #ffffff;
@@ -80,6 +80,12 @@
 .it-repairs__top-price span {
   color: #ffffff;
   font-size: rem(24px);
+  font-weight: 300;
+}
+
+.it-repairs__top-price sup {
+  color: #ffffff;
+  font-size: rem(20px);
   font-weight: 300;
 }
 

@@ -4,7 +4,7 @@
 @import 'advantages';
 @import 'why';
 @import 'catalog';
-@import 'header';
+
 @import 'price';
 @import 'calc';
 @import 'reviews';
@@ -24,6 +24,7 @@
 @import 'scheme';
 @import 'main-offer-2';
 @import 'footer';
+@import 'header';
 
 /******************* it-all-style *******************/
 
@@ -155,8 +156,8 @@ body * {
   text-align: center;
   user-select: none;
   border: none;
-  padding: rem(12px) rem(10px);
-  font-size: rem(14px);
+  padding: 16px 10px;
+  font-size: 14px;
   transition: all 0.2s ease-in-out;
   background-color: $main-color;
   color: rgba(31, 31, 31, 1);
