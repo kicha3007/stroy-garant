@@ -12,15 +12,15 @@ section#it-modal1.it-modal
 					br
 					| и мы вам перезвоним!
 		.it-modal__content
-			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST', name='modal-form', data-it-form='', enctype='multipart/form-data')
+			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST' data-it-form )
 				input(type='hidden', name='FORM_HEADER', value='Узнать стоимость квартиры')
 				.it-modal__input-wrap
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Ваше имя:
-						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Иван', required='')
+						input.it-modal__input(name='NAME', maxlength='200', value='', placeholder='Иван', required='')
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Телефон:
-						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
+						input.it-modal__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
 					.it-modal__checkbox-wrap
 						label.it-checkbox
 							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
@@ -30,8 +30,8 @@ section#it-modal1.it-modal
 						button.it-btn.it-modal__btn(type='submit')
 							| Отправить
 					input(type='hidden', value='modal-form', name='FORM_NAME')
-					input(type='hidden', name='name')
-					input(type='hidden', name='phone')
+					input(type='hidden', name='NAME')
+					input(type='hidden', name='PHONE')
 				.it-form__success
 					| Спасибо!
 					br
@@ -52,15 +52,15 @@ section#it-modal2.it-modal
 					br
 					| и мы вам перезвоним!
 		.it-modal__content
-			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST', name='modal-form', data-it-form='', enctype='multipart/form-data')
+			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST' data-it-form)
 				input(type='hidden', name='FORM_HEADER', value='Узнать стоимость квартиры')
 				.it-modal__input-wrap
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Ваше имя:
-						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Иван', required='')
+						input.it-modal__input(name='NAME', maxlength='200', value='', placeholder='Иван', required='')
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Телефон:
-						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
+						input.it-modal__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
 					.it-modal__checkbox-wrap
 						label.it-checkbox
 							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
@@ -70,8 +70,8 @@ section#it-modal2.it-modal
 						button.it-btn.it-modal__btn(type='submit')
 							| Отправить
 					input(type='hidden', value='modal-form', name='FORM_NAME')
-					input(type='hidden', name='name')
-					input(type='hidden', name='phone')
+					input(type='hidden', name='NAME')
+					input(type='hidden', name='PHONE')
 				.it-form__success
 					| Спасибо!
 					br
@@ -92,15 +92,15 @@ section#it-modal3.it-modal
 					br
 					| и мы вам перезвоним!
 		.it-modal__content
-			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST', name='modal-form', data-it-form='', enctype='multipart/form-data')
+			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST' data-it-form)
 				input(type='hidden', name='FORM_HEADER', value='Узнать стоимость квартиры')
 				.it-modal__input-wrap
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Ваше имя:
-						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Иван', required='')
+						input.it-modal__input(name='NAME', maxlength='200', value='', placeholder='Иван', required='')
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Телефон:
-						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
+						input.it-modal__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
 					.it-modal__checkbox-wrap
 						label.it-checkbox
 							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
@@ -110,8 +110,8 @@ section#it-modal3.it-modal
 						button.it-btn.it-modal__btn(type='submit')
 							| Отправить
 					input(type='hidden', value='modal-form', name='FORM_NAME')
-					input(type='hidden', name='name')
-					input(type='hidden', name='phone')
+					input(type='hidden', name='NAME')
+					input(type='hidden', name='PHONE')
 				.it-form__success
 					| Спасибо!
 					br
@@ -132,15 +132,15 @@ section#it-modal4.it-modal
 					br
 					| и мы вам перезвоним!
 		.it-modal__content
-			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST', name='modal-form', data-it-form='', enctype='multipart/form-data')
+			form.it-modal__form.it-form--hide(action='/sendCallBack.php', method='POST' data-it-form )
 				input(type='hidden', name='FORM_HEADER', value='Узнать стоимость квартиры')
 				.it-modal__input-wrap
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Ваше имя:
-						input.it-modal__input(name='name', maxlength='200', value='', placeholder='Иван', required='')
+						input.it-modal__input(name='NAME', maxlength='200', value='', placeholder='Иван', required='')
 					label.it-modal__input-inner-wrap
 						.it-modal__input-title Телефон:
-						input.it-modal__input(type='tel', name='phone', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
+						input.it-modal__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='+7 (999) 999-99-99', data-phone='true', required='', data-mask='phone')
 					.it-modal__checkbox-wrap
 						label.it-checkbox
 							input.it-checkbox__default(type='checkbox', name='AGREE', checked='', required='')
@@ -150,8 +150,8 @@ section#it-modal4.it-modal
 						button.it-btn.it-modal__btn(type='submit')
 							| Отправить
 					input(type='hidden', value='modal-form', name='FORM_NAME')
-					input(type='hidden', name='name')
-					input(type='hidden', name='phone')
+					input(type='hidden', name='NAME')
+					input(type='hidden', name='PHONE')
 				.it-form__success
 					| Спасибо!
 					br

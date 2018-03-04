@@ -78,6 +78,35 @@ $(function () {
 
 
 
+    /* ------------------- ajax ------------------- */
+
+    $(document).on("submit", "[data-it-form]", function (e) {
+        e.preventDefault();
+        var $form = $(this);
+        var $data = new FormData($form[0]);
+        console.log($form.attr("action"));
+        $.post(
+            {
+                url: $form.attr("action"),
+                data: $data,
+                dataType: "json",
+                timeout: 30000,
+                processData: false,
+                contentType: false,
+                success: function (data) {
+                    $form.addClass("success");
+                    $form.find($(".it-form__success")).html(data.message);
+                },
+
+                error: function() {
+                    $form.addClass("success");
+                    $form.find($(".it-form__success")).html("Извините, временные проблемы на сервере, попробуйте ещё раз!");
+
+                }
+            }
+        )
+    });
+
 
 
 
