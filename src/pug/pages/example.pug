@@ -6,37 +6,55 @@ section.it-example
 					.it-example__top-title
 						span
 							|	Проект № 1.
-						|	ул. Мельникайте  2
-					.it-example__top-desc
-						| Выполнено объединение 2 смежных квартир, с пробивкой проема в несущей стене с последующим усилением. Штукатурка стен по маякам, шпаклевание под обои, поклейка обоев. Выравнивание полов, кладка плитки на пол, монтаж ламината, устройство теплых полов. Натяжные потолки ПВХ и тканевые. потолочные плинтуса. Гипсокартонные конструкции по стенам. Кладка плитки в санузлах, установка сантехники, электромонтажные работы.
+						|	Коттедж, ул. Барнаульская
+					//.it-example__top-desc
+					//	| Выполнено объединение 2 смежных квартир, с пробивкой проема в несущей стене с последующим усилением. Штукатурка стен по маякам, шпаклевание под обои, поклейка обоев. Выравнивание полов, кладка плитки на пол, монтаж ламината, устройство теплых полов. Натяжные потолки ПВХ и тканевые. потолочные плинтуса. Гипсокартонные конструкции по стенам. Кладка плитки в санузлах, установка сантехники, электромонтажные работы.
 					.it-example__top-info-wrap
-						.it-example__top-info-half
+						.it-example__top-info-half.it-example__top-info-half--time
 							|	Сроки ремонта:
 							b
-								|	 2 месяца
+								|	 2,5 месяца
 						.it-example__top-info-half
 							|	Площадь:
 							b
-								|	300 м2
-						.it-example__top-info-half
-							|	Стоимость:
-							b
-								|	999 999 руб.
+								|	150 м2
+						//.it-example__top-info-half
+						//	|	Стоимость:
+						//	b
+						//		|	999 999 руб.
 				.it-example__center
 					.it-example__half.it-example__half--left
-						.it-example__img-box
+						a(href="static/img/example/2.jpg" data-modal rel="example").it-example__img-box
+
 							img.it-example__img(src="static/img/example/1.jpg", alt='')
+							.it-example__more
+								.it-example__more-img-box
+									img(src="static/img/example/loupe.svg" title="").it-example__more-img
+								.it-example__more-text
+									|	Смотреть
+									br
+									|	все фото
+						a(href="static/img/example/3.jpg"  rel="example" data-modal)
+						a(href="static/img/example/4.jpg"  rel="example" data-modal)
+						a(href="static/img/example/5.jpg"  rel="example" data-modal)
+						a(href="static/img/example/6.jpg"  rel="example" data-modal)
+						a(href="static/img/example/7.jpg"  rel="example" data-modal)
+						a(href="static/img/example/8.jpg"  rel="example" data-modal)
+						a(href="static/img/example/9.jpg"  rel="example" data-modal)
+						a(href="static/img/example/10.jpg"  rel="example" data-modal)
+						a(href="static/img/example/11.jpg"  rel="example" data-modal)
+						a(href="static/img/example/12.jpg"  rel="example" data-modal)
 					.it-example__half.it-example__half--right
 						.it-example__content
 							.it-example__title
 								| Отзыв клиента:
 							.it-example__desc
-								| Хочу выразить благодарность фирме за выполненный ремонт квартиры, которая была сдана в срок. Прорабу Яне, за профессиональную организацию труда. Бригада рабочих работали слаженно. Дельные советы предоставлялись фирмой, сэкономила немного денег. Спасибо еще раз, и желаю вам процветания. Буду ВАС рекомендовать своим знакомым...
-							.it-example__review-wrap
-								.it-example__name
-									|	Артур
-								.it-example__show
-									|	Смотреть рукописный отзыв
+								| Капитальный ремонт, дизайн проект: стяжка пола, полный комплекс электромонтажных работ, пристройка крыльца, перепланировка из гаража сделали прихожую, выравнивание стен, шпаклевка под покраску, покраска, поклейка обоев, кладка плитки, мозаики, сантехнические работы по отоплению, канализации и водоснабжению, нат¤жные потолки, декоративна¤ штукатурка, установка дверей.
+							//.it-example__review-wrap
+							//	.it-example__name
+							//		|	Артур
+							//	.it-example__show
+							//		|	Смотреть рукописный отзыв
 				.it-example__bottom
 					.it-example__bottom-title
 						|	Понравился проект?
@@ -45,3 +63,4 @@ section.it-example
 					.it-example__buttons
 						a.it-btn.it-example__btn(href="#it-modal1" data-modal)
 							| Заказать звонок
+

@@ -1,4 +1,19 @@
 
+/* ------------------- fancybox ------------------- */
+
+$("[data-modal]").fancybox({
+    padding: 0,
+    helpers: {
+        overlay: {
+            locked: false
+        }
+    }
+
+});
+
+
+
+
 /* ****************************** accordion ****************************** */
 
 
@@ -26,21 +41,6 @@ $(function () {
          $(this).parent().find("[]").toggle();*/
     });
 
-
-    /* ------------------- fancybox ------------------- */
-
-
-
-
-    $("[data-modal]").fancybox({
-        padding: 0,
-        helpers: {
-            overlay: {
-                locked: false
-            }
-        }
-
-    });
 
     /* ------------------- carousel ------------------- */
 

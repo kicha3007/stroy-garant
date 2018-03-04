@@ -33,7 +33,17 @@
   font-size: rem(24px);
   font-weight: 300;
   position: relative;
+  @include phones {
+    padding-left: 0;
+  }
 }
+
+.it-example__top-info-half--time {
+  @include phones {
+    margin-bottom: 20px;
+  }
+}
+
 
 .it-example__top-info-half:first-child {
   padding-left: 0;
@@ -48,6 +58,9 @@
 	width: 2px;
 	height: 30px;
     background-color: rgba(229, 229, 229, 1);
+    @include phones {
+      display: none;
+    }
 }
 
 .it-example__top-info-half:first-child:before {
@@ -97,6 +110,7 @@
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 35px;
+  color: #000000;;
 }
 
 .it-example__img-box {
@@ -106,16 +120,101 @@
   justify-content: center;
   align-items: center;
   max-height: 500px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+
 }
+
 
 .it-example__img {
   height: 100%;
   width: auto !important;
   display: block;
+  transition: 0.2s;
   @include tablets {
     width: 100% !important;
     height: auto;
   }
+}
+
+.it-example__img-box:hover .it-example__img {
+  transform: scale(1.1);
+}
+
+.it-example__img-box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    z-index: 2;
+
+
+}
+
+.it-example__img-box:hover:before{
+   background-color: rgba(0,0,0,0.3);
+}
+
+
+
+.it-example__img-box:hover .it-example__more-img-box {
+  width: 70px;
+  height:70px;
+}
+
+.it-example__img-box:hover .it-example__more {
+  left: 46%;
+}
+
+
+.it-example__img-box:hover .it-example__more-text {
+  font-size: rem(26px);
+}
+
+
+.it-example__more {
+  position: absolute;
+  top: 50%;
+  margin-left: -80px;
+  left: 50%;
+  margin-top: -30px;
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.2s;
+  pointer-events: none;
+  z-index: 3;
+
+}
+
+.it-example__more-img-box {
+  height: 48px;
+  width: 48px;
+  transition: 0.2s;
+}
+
+.it-example__more-text {
+  font-size: rem(18px);
+  color: #ffffff;
+  padding-left: 25px;
+  transition: 0.2s;
+}
+
+
+
+
+.it-example__more-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
 }
 
 .it-example__review-wrap {
@@ -150,7 +249,7 @@
 }
 
 .it-example__bottom {
-  padding: 6% 6%;
+  padding: 5% 6% 4%;
   background-color: rgba(41, 41, 41, 1);
   text-align: center;
 }
@@ -159,7 +258,7 @@
   color: #ffffff;
   font-size: rem(24px);
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .it-example__bottom-subtitle {
@@ -171,7 +270,7 @@
 
 .it-example__buttons {
   margin-bottom: 20px;
-  max-width: 200px;
+  max-width: 260px;
   width: 100%;
   display: inline-block;
 }
