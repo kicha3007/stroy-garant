@@ -117,7 +117,7 @@
 }
 
 .it-header__half--right {
-  justify-content: flex-end;
+  justify-content: space-around;
 
 }
 
@@ -191,7 +191,6 @@
 }
 
 .it-header__phone-wrap {
-  padding-right: 14%;
   @include tablets {
     padding-right: 1%;
   }
@@ -233,8 +232,13 @@
   max-width: 165px;
   width: 100%;
   margin-left: 5px;
-  flex-basis: 100px;
-  flex-grow: 1;
+
+  @include tablets {
+    flex-basis: 100px;
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+
 }
 
 

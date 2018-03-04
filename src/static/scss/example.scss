@@ -91,6 +91,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  @include laptop {
+      justify-content: center;
+  }
 
 }
 
@@ -123,6 +126,9 @@
   position: relative;
   cursor: pointer;
   transition: 0.2s;
+  @include tablets {
+    max-height: 300px;
+  }
 
 }
 

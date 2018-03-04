@@ -18,7 +18,7 @@
   margin-bottom: 30px;
   @include col();
   @include size(3);
-  @include size-lg(6);
+  @include size-md(6);
   @include size-xs(12);
 }
 

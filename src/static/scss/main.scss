@@ -1,19 +1,8 @@
 @import '__vars';
 @import 'main-offer';
-@import 'callback';
 @import 'advantages';
-@import 'why';
 @import 'catalog';
-
-@import 'price';
-@import 'calc';
-@import 'reviews';
-@import 'file';
-@import 'production';
-@import 'order';
-@import 'for-kitchen';
 @import 'contacts';
-@import 'other';
 @import 'modal';
 @import 'gift';
 @import 'example';
@@ -137,14 +126,14 @@ body * {
 .it-main-page__wrapper {
   position: relative;
   min-height: 100%;
-  margin-bottom: -404px;
+  margin-bottom: -103px;
   overflow: hidden;
 }
 
 .it-main-page__wrapper:after {
   content: "";
   display: block;
-  height: 404px;
+  height: 103px;
 }
 
 .it-btn {

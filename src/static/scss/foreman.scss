@@ -29,6 +29,9 @@
   font-weight: 700;
   font-size: rem(24px);
   margin-bottom: 40px;
+  @include phones {
+    margin-bottom: 20px;
+  }
 }
 
 .it-foreman__desc {
@@ -44,6 +47,9 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.55);
   padding: 15px 30px;
+  @include phones {
+    padding: 10px 15px;
+  }
 }
 
 .it-foreman__name {
@@ -56,6 +62,9 @@
   font-weight: 300;
   font-size: rem(24px);
   color: #ffffff;
+  @include phones {
+    font-size: rem(20px);
+  }
 }
 
 .it-foreman__img-box {
@@ -70,6 +79,10 @@
   display: block;
   width: auto;
   height: 100%;
+  @include phones {
+      max-width: 100%;
+      height: auto;
+  }
 }
 
 .it-foreman__list {

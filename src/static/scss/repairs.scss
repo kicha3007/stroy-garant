@@ -95,6 +95,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   flex-grow: 1;
+  @include phones {
+    padding: 5% 10%;
+  }
 }
 
 .it-repairs__title {

@@ -4,6 +4,9 @@
 
 .it-scheme {
   margin-bottom: 120px;
+  @include laptop {
+    margin-bottom: 80px;
+  }
 }
 
 .it-scheme__list {

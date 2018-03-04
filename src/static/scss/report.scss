@@ -8,14 +8,23 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  overflow: hidden;
 
 }
+
+
 
 .it-report__img {
   max-width: 100%;
   width: auto !important;
   height: auto;
+  transition: 0.2s;
 }
+
+.it-report__half:hover .it-report__img {
+  transform: scale(1.1);
+}
+
 
 /******************* report+owl *******************/
 
