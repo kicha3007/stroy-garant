@@ -15,6 +15,7 @@ module.exports = function () {
                 openbrace: 'end-of-line',
                 autosemicolon: true
             }))
+            .pipe($.gcmq())
             .pipe($.gp.sourcemaps.write())
             .pipe($.gulp.dest("build/static/css/"))
             .pipe($.bs.reload({

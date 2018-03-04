@@ -3,6 +3,7 @@ global.$ = {
     gp : require("gulp-load-plugins")(),
     bs : require('browser-sync').create(),
     sg : require('smart-grid'),
+    gcmq : require('gulp-group-css-media-queries'),
 
     path: {
         tasks: require("./gulp/config/tasks.js")
